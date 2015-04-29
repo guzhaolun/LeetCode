@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="源文件\code">
+      <UniqueIdentifier>{b971b9bb-610e-44a3-82e6-981981cb486c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="11. Container With Most Water .cpp">
+      <Filter>源文件\code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\课程\LeetCode\3.lengthOfLongestSubstring.cpp">
+      <Filter>源文件\code</Filter>
+    </ClCompile>
+    <ClCompile Include="4.Median of Two Sorted Arrays .cpp">
+      <Filter>源文件\code</Filter>
+    </ClCompile>
+    <ClCompile Include="5.Longest Palindromic Substring.cpp">
+      <Filter>源文件\code</Filter>
+    </ClCompile>
+    <ClCompile Include="6.ZigZag Conversion.cpp">
+      <Filter>源文件\code</Filter>
+    </ClCompile>
+    <ClCompile Include="7.Reverse Integer .cpp">
+      <Filter>源文件\code</Filter>
+    </ClCompile>
+    <ClCompile Include="8.atoi.cpp">
+      <Filter>源文件\code</Filter>
+    </ClCompile>
+    <ClCompile Include="9.Palindrome Number.cpp">
+      <Filter>源文件\code</Filter>
+    </ClCompile>
+    <ClCompile Include="10.Regular Expression Matching .cpp">
+      <Filter>源文件\code</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="12.Integer to Roman.cpp">
+      <Filter>源文件\code</Filter>
+    </ClCompile>
+    <ClCompile Include="13.Roman to Integer.cpp">
+      <Filter>源文件\code</Filter>
+    </ClCompile>
+    <ClCompile Include="14.Longest Common Prefix .cpp">
+      <Filter>源文件\code</Filter>
+    </ClCompile>
+    <ClCompile Include="15.3Sum.cpp">
+      <Filter>源文件\code</Filter>
+    </ClCompile>
+    <ClCompile Include="16. 3Sum Closest .cpp">
+      <Filter>源文件\code</Filter>
+    </ClCompile>
+    <ClCompile Include="17. Letter Combinations of a Phone Number .cpp">
+      <Filter>源文件\code</Filter>
+    </ClCompile>
+    <ClCompile Include="18. 4Sum.cpp">
+      <Filter>源文件\code</Filter>
+    </ClCompile>
+    <ClCompile Include="19. Remove Nth Node From End of List .cpp">
+      <Filter>源文件\code</Filter>
+    </ClCompile>
+    <ClCompile Include="20. Valid Parentheses .cpp">
+      <Filter>源文件\code</Filter>
+    </ClCompile>
+    <ClCompile Include="22. Generate Parentheses.cpp">
+      <Filter>源文件\code</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
+  </ItemGroup>
+</Project>
