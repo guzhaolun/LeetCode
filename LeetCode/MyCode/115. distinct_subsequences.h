@@ -4,7 +4,7 @@ using namespace std;
 class Solution115
 {
 public:
-	//递归，深搜
+	//递归，深搜,超时了
 	int numDistinct(string s, string t)
 	{
 		int count = 0;
@@ -26,7 +26,8 @@ public:
 		dfs(s, i + 1, t, j, count);
 	}
 
-	int numDistinct(string s, string t)
+	//动态规划，每个匹配的字符分使用还是弃用
+	int numDistinct2(string s, string t)
 	{
 		int l1 = s.size();
 		int l2 = t.size();

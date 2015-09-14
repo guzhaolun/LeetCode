@@ -14,6 +14,7 @@ public:
 	void connect(TreeLinkNode *root)
 	{
 		TreeLinkNode* temp = new TreeLinkNode(0);
+		TreeLinkNode* next = root;
 		TreeLinkNode* pre = temp;
 		if (!root)
 			return;
@@ -21,32 +22,36 @@ public:
 		while (root)
 		{
 			pre = temp;
+			bool findNext = false;
 			while (root)
 			{
 				if (root->left)
 				{
 					pre->next = root->left;
 					pre = root->left;
+					if (!findNext)
+					{
+						next = root->left;
+						findNext = true;
+					}
 				}
 				if (root->right)
 				{
 					pre->next = root->right;
 					pre = root->right;
+					if (!findNext)
+					{
+						next = root->right;
+						findNext = true;
+					}
 				}
-				
+
 				root = root->next;
 			}
 			pre->next = NULL;
-			if (root->left)
-			{
-				root = root->left;
-			}
-			else if (root->right)
-			{
-				root = root->right;
-			}
-			else
-				root = root->next;
+			if (findNext)
+				root = next;
+			else break;
 		}
 		delete[] temp;
 	}

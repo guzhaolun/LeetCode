@@ -17,8 +17,9 @@ public:
 		if (!root)
 			return;
 		root->next = NULL;
-		while (root)
+		while (root&&root->left)
 		{
+			TreeLinkNode* temp = root->left;
 			while (root)
 			{
 				pre->next = root->left;
@@ -27,8 +28,14 @@ public:
 				root = root->next;
 			}
 			pre->next = NULL;
-			pre = root->left;
-			root = root->left;
+			if (temp->left)
+			{
+				pre = temp->left;
+				root = temp;
+			}
+			else
+				break;
+
 		}
 	}
 };
