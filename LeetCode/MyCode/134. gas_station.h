@@ -28,6 +28,7 @@ public:
 			return -1;
 	}
 
+	//类似于找最大连续子串和，从i开始，到j和<0,则i-j之间的全跳过
 	int canCompleteCircuit2(vector<int>& gas, vector<int>& cost)
 	{
 		int m = gas.size();
@@ -62,12 +63,33 @@ public:
 			}
 			if (d == m && !turn)
 				return k;
-			if (i == m-1&&turn)
+
+			if ((i == m - 1 || d == m) && turn)
 				return -1;
 			if (!turn)
 				k++;
 		}
 		if (k == m)
 			return -1;
+	}
+
+	//上网搜了下，居然还能从2n降到n,牛逼啊
+	//http://www.cnblogs.com/felixfang/p/3814463.html
+	int canCompleteCircuit3(vector<int>& gas, vector<int>& cost)
+	{
+		int size = gas.size();
+		int total = 0, sum = 0;
+		int start = -1;
+		for (int i = 0; i < size; i++)
+		{
+			total += gas[i] - cost[i];
+			sum += gas[i] - cost[i];
+			if (sum < 0)
+			{
+				start = i;
+				sum = 0;
+			}
+		}
+		return total < 0 ? -1 : start+1;
 	}
 };
