@@ -13,7 +13,7 @@ public:
 	}
 
 	//这东西居然还有更快的，牛逼啊
-	int hammingWeight(unsigned int n)
+	int hammingWeight2(unsigned int n)
 	{
 		int count = 0;
 		while (n)
